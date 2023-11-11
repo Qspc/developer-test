@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Pagination from '../component/pagination';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +11,7 @@ export default function HomePage() {
   const [country, setCountry] = useState('');
   const [type, setType] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  // const [totalPages, setTotalPages] = useState(1);
   const navigate = useNavigate();
 
   useEffect(() => {
