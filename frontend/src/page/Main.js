@@ -38,7 +38,6 @@ export default function HomePage() {
     if (!search && !!country) setFilter(data);
 
     const newData = data.filter((item) => Object.values(item.title).join('').toLowerCase().includes(search.toLowerCase()) && Object.values(item.location).join('').toLowerCase().includes(country.toLowerCase()));
-    // const newData = data.filter((item) => Object.values(item.title).join('').toLowerCase().includes(search.toLowerCase()));
     setFilter(newData);
     setCurrentPage(1);
   };
