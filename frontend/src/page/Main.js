@@ -10,8 +10,8 @@ export default function HomePage() {
   const [search, setSearch] = useState('');
   const [country, setCountry] = useState('');
   const [type, setType] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1); // page
-  const [totalPages, setTotalPages] = useState(1); // total page
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   const navigate = useNavigate();
 
   useEffect(() => {
